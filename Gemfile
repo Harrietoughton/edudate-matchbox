@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'simple_enum', '~> 2.3.0'
 end
 
 group :development do
@@ -53,6 +54,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem "react_on_rails", "= 12.4"
+gem 'react_on_rails', '= 12.4'
 
 gem 'mini_racer', platforms: :ruby

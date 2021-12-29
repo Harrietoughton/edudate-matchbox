@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_211_223_100_821) do
+ActiveRecord::Schema.define(version: 20_211_224_164_212) do
   create_table 'date_events', force: :cascade do |t|
     t.datetime 'time'
     t.boolean 'teacher_1_liked'
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20_211_223_100_821) do
     t.string 'interested_in'
     t.datetime 'created_at', precision: 6, null: false
     t.datetime 'updated_at', precision: 6, null: false
+    t.string 'age'
+    t.string 'gender'
   end
 
   add_foreign_key 'edudates', 'date_events'
