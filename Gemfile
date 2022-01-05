@@ -61,3 +61,4 @@ gem 'mini_racer', platforms: :ruby
 gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'rack-cors', require: 'rack/cors'
 gem 'devise'
+gem 'simple_form'
