@@ -1,17 +1,15 @@
-import React from "react"
-import Registration from "./auth/Registration";
+import React from 'react';
+import Registration from './auth/Registration';
 
 class Home extends React.Component {
-  render () {
+  render() {
     return (
-      <React.Fragment>
-        <div>
-          <h1>Home</h1>
-          <Registration />
-        </div>
-      </React.Fragment>
+      <div>
+        <h1>Home</h1>
+        <Registration />
+      </div>
     );
   }
 }
 
-export default Home
+export default Home;
