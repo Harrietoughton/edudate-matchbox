@@ -1,0 +1,25 @@
+<div class='form-container'>
+  <h1>Edudate Matchbox</h1>
+  <h2>Sign up</h2>
+  <div>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+      <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: 'Enter a Username', :class => 'input' %>
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Enter a Password', :class => 'input' %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confirm Password', :class => 'input' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Get Started", :class => 'form-submit-button' %>
+    </div>
+  <% end %>
+  </div>
+  <div>
+  <h2>Already have an account? <a href='/users/sign_in'>Log in</a> here...</h2>
+  <%# <%= render "devise/shared/links" %>
+  </div>
+</div>
